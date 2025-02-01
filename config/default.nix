@@ -23,7 +23,7 @@
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix
     ./plugins/git/worktree.nix
-    ./plugins/git/gitblame.nix
+    # ./plugins/git/gitblame.nix
 
     # Snippets
     ./plugins/snippets/luasnip.nix
