@@ -12,12 +12,12 @@
         nil_ls = {
           enable = true;
         };
-        marksman = {
-          enable = true;
-        };
-        pyright = {
-          enable = true;
-        };
+        # marksman = {
+        #   enable = true;
+        # };
+        # pyright = {
+        #   enable = true;
+        # };
         clangd = {
           enable = true;
           cmd = [

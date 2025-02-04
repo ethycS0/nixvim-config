@@ -20,9 +20,7 @@
     ./plugins/lsp/clangd-extensions.nix
 
     # Git integration
-    ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix
-    ./plugins/git/worktree.nix
 
     # Snippets
     ./plugins/snippets/luasnip.nix
@@ -50,13 +48,10 @@
     ./plugins/utils/comment-box.nix
     ./plugins/utils/flash.nix
     ./plugins/utils/trouble.nix
-    ./plugins/utils/hardtime.nix
     ./plugins/utils/illuminate.nix
     ./plugins/utils/colorizer.nix
-    ./plugins/utils/mini.nix
     ./plugins/utils/neo-tree.nix
     ./plugins/utils/nvim-autopairs.nix
-    # ./plugins/utils/obsidian.nix
     ./plugins/utils/oil.nix
     ./plugins/utils/ufo.nix
     ./plugins/utils/undotree.nix

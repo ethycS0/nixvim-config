@@ -8,9 +8,6 @@
       indent = {
         enable = true;
       };
-      highlight = {
-        enable = true;
-      };
     };
 
     folding = true;

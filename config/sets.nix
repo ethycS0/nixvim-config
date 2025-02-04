@@ -1,25 +1,25 @@
 { pkgs, ... }:
 {
- 
+
   config = {
- performance = {
-    byteCompileLua = {
-      enable = true;
-      nvimRuntime = true;
-      configs = true;
-      plugins = true;
+    performance = {
+      byteCompileLua = {
+        enable = true;
+        nvimRuntime = true;
+        configs = true;
+        plugins = true;
+      };
     };
-  };
-  diagnostics = {
-    update_in_insert = true;
-    severity_sort = true;
-    float = {
-      border = "rounded";
+    diagnostics = {
+      update_in_insert = true;
+      severity_sort = true;
+      float = {
+        border = "rounded";
+      };
+      jump = {
+        severity.__raw = "vim.diagnostic.severity.WARN";
+      };
     };
-    jump = {
-      severity.__raw = "vim.diagnostic.severity.WARN";
-    };
-  };
     opts = {
       number = true;
       relativenumber = true;
@@ -29,7 +29,7 @@
       expandtab = true;
       smartindent = true;
       shiftwidth = 8;
-      breakindent = true;
+      breakindent = false;
       hlsearch = true;
       incsearch = true;
       wrap = true;
@@ -45,7 +45,7 @@
         "menuone"
         "noselect"
         "noinsert"
-      ]; 
+      ];
       swapfile = false;
       backup = false;
       undofile = true;
@@ -57,13 +57,14 @@
       foldlevel = 99;
       foldlevelstart = 99;
       foldenable = true;
-      scrolloff = 8;
+      scrolloff = 2;
       timeoutlen = 10;
       encoding = "utf-8";
       fileencoding = "utf-8";
       cmdheight = 0;
       showmode = false;
       clipboard.providers.wl-copy.enable = true;
+      clipboard.providers.xclip.enable = true;
     };
   };
 }
