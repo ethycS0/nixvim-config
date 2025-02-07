@@ -12,6 +12,9 @@
         nil_ls = {
           enable = true;
         };
+        asm_lsp = {
+          enable = true;
+        };
         # marksman = {
         #   enable = true;
         # };
