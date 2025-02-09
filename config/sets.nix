@@ -23,11 +23,13 @@
     opts = {
       number = true;
       relativenumber = true;
+      formatoptions = "jcroql";
       tabstop = 8;
       softtabstop = 8;
+      autoindent = false;
+      smartindent = false;
       showtabline = 8;
       expandtab = true;
-      smartindent = true;
       shiftwidth = 8;
       breakindent = false;
       hlsearch = true;
@@ -63,8 +65,12 @@
       fileencoding = "utf-8";
       cmdheight = 0;
       showmode = false;
-      clipboard.providers.wl-copy.enable = true;
-      clipboard.providers.xclip.enable = true;
+      clipboard = {
+        providers = {
+          wl-copy.enable = true;
+          xclip.enable = true;
+        };
+      };
     };
   };
 }
