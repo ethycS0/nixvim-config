@@ -15,6 +15,7 @@
         asm_lsp = {
           enable = true;
         };
+        arduino_language_server.enable = true;
         # marksman = {
         #   enable = true;
         # };
