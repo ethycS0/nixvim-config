@@ -55,6 +55,7 @@
     ./plugins/utils/oil.nix
     ./plugins/utils/ufo.nix
     ./plugins/utils/undotree.nix
+    ./plugins/utils/markdown-preview.nix
     ./plugins/utils/whichkey.nix
   ];
 }
