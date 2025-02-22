@@ -1,5 +1,5 @@
 { config, ... }:
 
 {
-  colorschemes.ayu.enable = true;
+  colorschemes.oxocarbon.enable = true;
 }
