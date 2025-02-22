@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       options = {
-        theme = "ayu_dark";
+        theme = "codedark";
         globalstatus = true;
         disabled_filetypes = {
           statusline = [
