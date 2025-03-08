@@ -1,5 +1,14 @@
 { config, ... }:
 
 {
-  colorschemes.oxocarbon.enable = true;
+  colorschemes = {
+    cyberdream.enable = true;
+    cyberdream.settings = {
+      theme = {
+        colors = {
+          bg = "#151515";
+        };
+      };
+    };
+  };
 }
