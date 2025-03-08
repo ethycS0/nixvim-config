@@ -30,7 +30,6 @@
       smartindent = false;
       showtabline = 8;
       expandtab = true;
-      background = "";
       shiftwidth = 8;
       breakindent = false;
       hlsearch = true;
