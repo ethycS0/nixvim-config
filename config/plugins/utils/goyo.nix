@@ -1,0 +1,3 @@
+{
+  plugins.goyo.enable = true;
+}
