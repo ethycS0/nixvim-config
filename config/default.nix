@@ -41,11 +41,13 @@
     ./plugins/ui/noice.nix
     ./plugins/ui/nvim-notify.nix
     ./plugins/ui/telescope.nix
+    ./plugins/ui/zen-mode.nix
     ./plugins/ui/project.nix
 
     # Utility Plugins
     ./plugins/utils/comment.nix
     ./plugins/utils/comment-box.nix
+    ./plugins/utils/vimtex.nix
     ./plugins/utils/flash.nix
     ./plugins/utils/trouble.nix
     ./plugins/utils/illuminate.nix
