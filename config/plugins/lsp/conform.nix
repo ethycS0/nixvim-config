@@ -3,7 +3,7 @@
     enable = true;
     settings = {
 
-      notify_on_error = true;
+      notify_on_error = false;
 
       formatters_by_ft = {
         c = [ "clang-format" ];
@@ -11,12 +11,7 @@
         python = [ "black" ];
         lua = [ "stylua" ];
         nix = [ "nixfmt" ];
-        markdown = [
-          [
-            "prettierd"
-            "prettier"
-          ]
-        ];
+        markdown = [ "mdformat" ];
       };
     };
   };
