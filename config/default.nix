@@ -50,8 +50,8 @@
     ./plugins/utils/vimtex.nix
     ./plugins/utils/flash.nix
     ./plugins/utils/trouble.nix
-    ./plugins/utils/glow.nix
     ./plugins/utils/clipboard-image.nix
+    ./plugins/utils/render-markdown.nix
     ./plugins/utils/illuminate.nix
     ./plugins/utils/colorizer.nix
     ./plugins/utils/neo-tree.nix

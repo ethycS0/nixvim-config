@@ -1,3 +1,0 @@
-{
-  plugins.glow.enable = true;
-}
