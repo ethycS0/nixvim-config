@@ -54,7 +54,7 @@
       termguicolors = true;
       # Enable the sign column to prevent the screen from jumping
       # signcolumn = "yes";
-      cursorline = true; # Highlight the line where the cursor is located
+      cursorline = false; # Highlight the line where the cursor is located
       foldcolumn = "0";
       foldlevel = 99;
       foldlevelstart = 99;

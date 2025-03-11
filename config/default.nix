@@ -13,6 +13,7 @@
     # Completion and LSP
     ./plugins/completion/cmp.nix
     ./plugins/completion/lspkind.nix
+    ./plugins/completion/codeium.nix
     ./plugins/lsp/conform.nix
     ./plugins/lsp/lsp.nix
     ./plugins/lsp/lspsaga.nix
