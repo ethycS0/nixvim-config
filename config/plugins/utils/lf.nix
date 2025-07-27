@@ -31,7 +31,7 @@
         "v"
       ];
       key = "<leader>e";
-      action = ":LF<CR>";
+      action = ":Lf<CR>";
       options = {
         silent = true;
         desc = "Files";
