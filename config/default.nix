@@ -55,6 +55,7 @@
     ./plugins/utils/trouble.nix
     ./plugins/utils/clipboard-image.nix
     ./plugins/utils/goyo.nix
+    ./plugins/utils/lf.nix
     ./plugins/utils/illuminate.nix
     ./plugins/utils/colorizer.nix
     ./plugins/utils/nvim-autopairs.nix
