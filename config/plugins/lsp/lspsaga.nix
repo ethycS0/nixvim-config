@@ -5,11 +5,11 @@
       enable = true;
     };
     ui = {
-      border = "solid"; 
+      border = "solid";
       devicon = true;
     };
     hover = {
-      openCmd = "!firefox"; 
+      openCmd = "!firefox";
       openLink = "gx";
     };
     diagnostic = {
@@ -19,7 +19,7 @@
       extendRelatedInformation = true;
     };
     symbolInWinbar = {
-      enable = true; 
+      enable = true;
     };
     codeAction = {
       extendGitSigns = false;
@@ -57,8 +57,8 @@
       autoClose = true;
       autoPreview = true;
       closeAfterJump = true;
-      layout = "normal"; 
-      winPosition = "right"; 
+      layout = "normal";
+      winPosition = "right";
       keys = {
         jump = "e";
         quit = "q";

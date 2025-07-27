@@ -8,7 +8,6 @@
 {
   imports = [
     # Base settings
-    ./autocommands.nix
     ./keys.nix
     ./sets.nix
 
@@ -52,15 +51,12 @@
     # Utility Plugins
     ./plugins/utils/comment.nix
     ./plugins/utils/comment-box.nix
-    ./plugins/utils/vimtex.nix
     ./plugins/utils/flash.nix
     ./plugins/utils/trouble.nix
     ./plugins/utils/clipboard-image.nix
     ./plugins/utils/goyo.nix
     ./plugins/utils/illuminate.nix
     ./plugins/utils/colorizer.nix
-    ./plugins/utils/nvim-tree.nix
-    # ./plugins/utils/neo-tree.nix
     ./plugins/utils/nvim-autopairs.nix
     ./plugins/utils/oil.nix
     ./plugins/utils/undotree.nix

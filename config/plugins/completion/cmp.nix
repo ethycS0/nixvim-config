@@ -15,9 +15,11 @@
           fetchingTimeout = 200;
           maxViewEntries = 30;
         };
+
         snippet = {
           expand = "luasnip";
         };
+
         formatting = {
           fields = [
             "kind"
@@ -54,6 +56,7 @@
 
         mapping = {
           "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<C-j>" = "cmp.mapping.select_next_item()";
           "<C-k>" = "cmp.mapping.select_prev_item()";
           "<C-e>" = "cmp.mapping.abort()";
