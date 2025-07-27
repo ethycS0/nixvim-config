@@ -21,6 +21,7 @@
       };
     };
     opts = {
+      autochdir = false;
       number = true;
       relativenumber = true;
       formatoptions = "jcroql";

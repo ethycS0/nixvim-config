@@ -122,14 +122,11 @@
     }
 
     local lspconfig = require('lspconfig')
-    local capabilities = require('cmp_nvim_lsp').default_capabilities()  -- For completion support (assumes nvim-cmp is installed)
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()  
 
-      -- Define a shared on_attach function
     local function custom_on_attach(client, bufnr)
-        print("LSP attached: " .. client.name .. " to buffer " .. bufnr)  -- Debug print to confirm attachment
-        -- Example keymap: Go to definition with <leader>gd
+        print("LSP attached: " .. client.name .. " to buffer " .. bufnr)
         vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
-        -- Enable formatting on save (optional)
         if client.supports_method('textDocument/formatting') then
           vim.api.nvim_create_autocmd('BufWritePre', {
             buffer = bufnr,
@@ -138,7 +135,6 @@
         end
       end
 
-      -- Apply to arduino_language_server (and others if desired)
     lspconfig.arduino_language_server.setup({
         on_attach = custom_on_attach,
         capabilities = capabilities,

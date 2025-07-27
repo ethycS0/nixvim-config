@@ -18,7 +18,6 @@
     # Completion and LSP
     ./plugins/completion/cmp.nix
     ./plugins/completion/lspkind.nix
-    ./plugins/completion/codeium.nix
     ./plugins/lsp/conform.nix
     ./plugins/lsp/lsp.nix
     ./plugins/lsp/lspsaga.nix
@@ -60,10 +59,10 @@
     ./plugins/utils/goyo.nix
     ./plugins/utils/illuminate.nix
     ./plugins/utils/colorizer.nix
-    ./plugins/utils/neo-tree.nix
+    ./plugins/utils/nvim-tree.nix
+    # ./plugins/utils/neo-tree.nix
     ./plugins/utils/nvim-autopairs.nix
     ./plugins/utils/oil.nix
-    ./plugins/utils/ufo.nix
     ./plugins/utils/undotree.nix
     ./plugins/utils/markdown-preview.nix
     ./plugins/utils/whichkey.nix
