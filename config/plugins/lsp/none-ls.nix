@@ -6,6 +6,7 @@
     enableLspFormat = true;
     settings = {
       updateInInsert = false;
+      temp_dir = "/tmp";
     };
     sources = {
       code_actions = {

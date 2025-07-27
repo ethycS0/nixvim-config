@@ -15,13 +15,21 @@
         asm_lsp = {
           enable = true;
         };
-        arduino_language_server.enable = true;
-        # marksman = {
-        #   enable = true;
-        # };
-        # pyright = {
-        #   enable = true;
-        # };
+        arduino_language_server = {
+          enable = true;
+          autostart = false;
+          cmd = [
+            "arduino-language-server"
+            "--cli"
+            "/home/arjun/.local/bin/arduino-cli"
+            "--cli-config"
+            "/home/arjun/.arduino15/arduino-cli.yaml"
+            "--clangd"
+            "/usr/bin/clangd-14"
+            "--fqbn"
+            "esp32:esp32:esp32"
+          ];
+        };
         clangd = {
           enable = true;
           cmd = [
@@ -112,5 +120,28 @@
     require('lspconfig.ui.windows').default_options = {
       border = _border
     }
+
+    local lspconfig = require('lspconfig')
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()  -- For completion support (assumes nvim-cmp is installed)
+
+      -- Define a shared on_attach function
+    local function custom_on_attach(client, bufnr)
+        print("LSP attached: " .. client.name .. " to buffer " .. bufnr)  -- Debug print to confirm attachment
+        -- Example keymap: Go to definition with <leader>gd
+        vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
+        -- Enable formatting on save (optional)
+        if client.supports_method('textDocument/formatting') then
+          vim.api.nvim_create_autocmd('BufWritePre', {
+            buffer = bufnr,
+            callback = function() vim.lsp.buf.format({ bufnr = bufnr }) end,
+          })
+        end
+      end
+
+      -- Apply to arduino_language_server (and others if desired)
+    lspconfig.arduino_language_server.setup({
+        on_attach = custom_on_attach,
+        capabilities = capabilities,
+      })
   '';
 }

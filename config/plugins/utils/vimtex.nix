@@ -1,3 +1,3 @@
 {
-  plugins.vimtex.enable = true;
+  # plugins.vimtex.enable = true;
 }
