@@ -34,6 +34,7 @@
           enable = true;
           cmd = [
             "clangd"
+            "--enable-config"
             "--clang-tidy"
             "--clang-tidy-checks=*"
             "--all-scopes-completion"
