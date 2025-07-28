@@ -4,7 +4,11 @@
       enable = true;
       enableTelescope = true;
       settings = {
-        manual_mode = true;
+        patterns = [
+          ".clangd"
+          ".git"
+        ];
+        # manual_mode = true;
       };
     };
   };
