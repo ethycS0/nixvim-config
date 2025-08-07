@@ -15,23 +15,16 @@
         asm_lsp = {
           enable = true;
         };
-        arduino_language_server = {
-          enable = true;
-          autostart = false;
-          cmd = [
-            "arduino-language-server"
-            "--cli"
-            "/home/arjun/.local/bin/arduino-cli"
-            "--cli-config"
-            "/home/arjun/.arduino15/arduino-cli.yaml"
-            "--clangd"
-            "/usr/bin/clangd-14"
-            "--fqbn"
-            "esp32:esp32:esp32"
-          ];
-        };
         clangd = {
           enable = true;
+          filetypes = [
+            "c"
+            "cpp"
+            "objc"
+            "objcpp"
+            "ino"
+            "arduino"
+          ];
           cmd = [
             "clangd"
             "--enable-config"
@@ -100,6 +93,11 @@
     };
   };
   extraConfigLua = ''
+    vim.filetype.add({
+      extension = {
+        ino = 'cpp',
+      },
+    })
     local _border = "rounded"
 
     vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
