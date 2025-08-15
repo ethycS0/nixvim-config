@@ -24,6 +24,7 @@
       autochdir = false;
       number = true;
       relativenumber = true;
+      modeline = false;
       formatoptions = "jcroql";
       tabstop = 8;
       softtabstop = 8;
