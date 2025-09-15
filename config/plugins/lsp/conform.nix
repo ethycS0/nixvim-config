@@ -5,6 +5,7 @@
       notify_on_error = false;
 
       formatters_by_ft = {
+        vhdl = [ "ghdl" ];
         c = [ "clang_format_8" ];
         cpp = [ "clang_format_8" ];
         ino = [ "clang_format_8" ]; # Treat .ino files like C++
