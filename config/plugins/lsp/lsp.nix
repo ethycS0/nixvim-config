@@ -9,6 +9,9 @@
         lua_ls = {
           enable = true;
         };
+        vhdl_ls = {
+          enable = true;
+        };
         nil_ls = {
           enable = true;
         };
