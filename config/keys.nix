@@ -91,7 +91,7 @@
         "v"
       ];
       key = "<leader>t";
-      action = "+test";
+      action = "<cmd>terminal<CR>";
     }
 
     # Tabs
