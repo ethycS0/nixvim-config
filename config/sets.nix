@@ -2,6 +2,15 @@
 {
 
   config = {
+
+    autoCmd = [
+      {
+        event = [ "VimResized" ];
+        pattern = [ "*" ];
+        command = "wincmd =";
+      }
+    ];
+
     performance = {
       byteCompileLua = {
         enable = true;
