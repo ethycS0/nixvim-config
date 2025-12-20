@@ -1,16 +1,9 @@
 { pkgs, ... }:
 {
-
   config = {
-
-    autoCmd = [
-      {
-        event = [ "VimResized" ];
-        pattern = [ "*" ];
-        command = "wincmd =";
-      }
-    ];
-
+  env = {
+    TERM = "xterm-256color"; # Force standard terminal behavior inside Neovim
+  };
     performance = {
       byteCompileLua = {
         enable = true;
