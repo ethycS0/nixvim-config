@@ -122,24 +122,5 @@
     require('lspconfig.ui.windows').default_options = {
       border = _border
     }
-
-    local lspconfig = require('lspconfig')
-    local capabilities = require('cmp_nvim_lsp').default_capabilities()  
-
-    local function custom_on_attach(client, bufnr)
-        print("LSP attached: " .. client.name .. " to buffer " .. bufnr)
-        vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
-        if client.supports_method('textDocument/formatting') then
-          vim.api.nvim_create_autocmd('BufWritePre', {
-            buffer = bufnr,
-            callback = function() vim.lsp.buf.format({ bufnr = bufnr }) end,
-          })
-        end
-      end
-
-    lspconfig.arduino_language_server.setup({
-        on_attach = custom_on_attach,
-        capabilities = capabilities,
-      })
   '';
 }

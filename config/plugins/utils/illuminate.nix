@@ -1,5 +1,5 @@
 {
-  plugins.illuminate = {
+  plugins.illuminate.settings = {
     enable = true;
     underCursor = false;
     filetypesDenylist = [

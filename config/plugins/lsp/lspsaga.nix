@@ -1,5 +1,5 @@
 {
-  plugins.lspsaga = {
+  plugins.lspsaga.settings = {
     enable = true;
     beacon = {
       enable = true;

@@ -1,5 +1,5 @@
 {
-  plugins.treesitter-textobjects = {
+  plugins.treesitter-textobjects.settings = {
     enable = true;
     select = {
       enable = true;

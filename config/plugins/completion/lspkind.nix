@@ -1,5 +1,5 @@
 {
-  plugins.lspkind = {
+  plugins.lspkind.settings = {
     enable = true;
     symbolMap = { };
     extraOptions = {

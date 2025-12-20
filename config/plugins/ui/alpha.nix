@@ -12,7 +12,7 @@
     in
     {
       enable = true;
-      layout = [
+      settings.layout = [
         {
           type = "padding";
           val = 4;
