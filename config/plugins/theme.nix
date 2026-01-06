@@ -2,8 +2,8 @@
 
 {
   colorschemes = {
-    tokyonight.enable = true;
-    tokyonight.settings = {
+    vscode.enable = true;
+    vscode.settings = {
       terminal_colors = true;
       transparent = true;
     };
