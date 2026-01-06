@@ -2,11 +2,10 @@
 
 {
   colorschemes = {
-    cyberdream.enable = true;
-    cyberdream.settings = {
-      colors = {
-        bg = "#151515";
-      };
+    tokyonight.enable = true;
+    tokyonight.settings = {
+      terminal_colors = true;
+      transparent = true;
     };
   };
 }
