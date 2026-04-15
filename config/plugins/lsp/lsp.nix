@@ -31,13 +31,14 @@
           cmd = [
             "clangd"
             "--enable-config"
+            "--query-driver=**"
+            "--background-index"
             "--clang-tidy"
-            "--clang-tidy-checks=*"
             "--all-scopes-completion"
             "--cross-file-rename"
             "--completion-style=detailed"
             "--header-insertion-decorators"
-            "--header-insertion=iwyu"
+            "--header-insertion=never"
             "--pch-storage=memory"
           ];
         };
