@@ -8,9 +8,6 @@
       servers = {
         rust_analyzer = {
           enable = true;
-          installCargo = false;
-          installRustc = false;
-          installRustAnalyzer = false;
         };
         lua_ls = {
           enable = true;
