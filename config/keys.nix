@@ -26,26 +26,20 @@
     }
 
     {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>y";
+      mode = "v";
+      key = "<C-c>";
       action = ''"+y'';
       options = {
-        desc = "Copy to system clipboard";
+        desc = "Copy selection to system clipboard";
       };
     }
 
     {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>Y";
+      mode = "n";
+      key = "<C-c>";
       action = ''"+Y'';
       options = {
-        desc = "Copy to system clipboard";
+        desc = "Copy line to system clipboard";
       };
     }
 

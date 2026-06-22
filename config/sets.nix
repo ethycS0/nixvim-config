@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
   config = {
-  env = {
-    TERM = "xterm-256color"; # Force standard terminal behavior inside Neovim
-  };
+    env = {
+      TERM = "xterm-256color"; # Force standard terminal behavior inside Neovim
+    };
     performance = {
       byteCompileLua = {
         enable = true;
@@ -70,6 +70,7 @@
       cmdheight = 0;
       showmode = false;
       clipboard = {
+        register = "unnamedplus";
         providers = {
           wl-copy.enable = true;
           xclip.enable = true;
