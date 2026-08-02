@@ -55,13 +55,13 @@
                 statix.enable = true;
                 nixfmt = {
                   enable = true;
-                  package = pkgs.nixfmt-rfc-style;
+                  package = pkgs.nixfmt;
                 };
               };
             };
           };
 
-          formatter = pkgs.nixfmt-rfc-style;
+          formatter = pkgs.nixfmt;
 
           packages.default = nvim;
 

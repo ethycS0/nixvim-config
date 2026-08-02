@@ -7,6 +7,8 @@
       enable = true;
       servers = {
         rust_analyzer = {
+          installCargo = false;
+          installRustc = false;
           enable = true;
         };
         lua_ls = {
@@ -19,6 +21,9 @@
           enable = true;
         };
         asm_lsp = {
+          enable = true;
+        };
+        neocmake = {
           enable = true;
         };
         clangd = {
