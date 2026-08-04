@@ -17,6 +17,9 @@
         vhdl_ls = {
           enable = true;
         };
+        verible = {
+          enable = true;
+        };
         nil_ls = {
           enable = true;
         };

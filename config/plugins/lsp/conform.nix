@@ -8,10 +8,12 @@
         vhdl = [ "ghdl" ];
         c = [ "clang_format_8" ];
         cpp = [ "clang_format_8" ];
-        ino = [ "clang_format_8" ]; # Treat .ino files like C++
+        ino = [ "clang_format_8" ];
         python = [ "black" ];
         lua = [ "stylua" ];
         nix = [ "nixfmt" ];
+        systemverilog = [ "verible_verilog_format" ];
+        verilog = [ "verible_verilog_format" ];
         markdown = [ "mdformat" ];
       };
 
