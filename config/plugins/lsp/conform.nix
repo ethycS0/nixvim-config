@@ -22,6 +22,10 @@
           command = "clang-format";
           args = [ "--style={BasedOnStyle: LLVM, IndentWidth: 8, TabWidth: 8, UseTab: Never}" ];
         };
+
+        verible_verilog_format = {
+          append_args = [ "--append_newline_at_eof=false" ];
+        };
       };
     };
   };
