@@ -4,6 +4,11 @@
     settings = {
       notify_on_error = true;
 
+      format_on_save = {
+        timeout_ms = 500;
+        lsp_format = "fallback";
+      };
+
       formatters_by_ft = {
         vhdl = [ "ghdl" ];
         c = [ "clang_format_8" ];
@@ -25,8 +30,9 @@
 
         verible_verilog_format = {
           command = "verible-verilog-format";
-          append_args = [
-            "--append_newline_at_eof=false"
+          args = [
+            "--flagfile=.verible-verilog-format"
+            "-"
           ];
         };
       };
