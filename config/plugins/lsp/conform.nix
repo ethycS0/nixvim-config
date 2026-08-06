@@ -2,7 +2,7 @@
   plugins.conform-nvim = {
     enable = true;
     settings = {
-      notify_on_error = false;
+      notify_on_error = true;
 
       formatters_by_ft = {
         vhdl = [ "ghdl" ];
@@ -24,7 +24,10 @@
         };
 
         verible_verilog_format = {
-          append_args = [ "--append_newline_at_eof=false" ];
+          command = "verible-verilog-format";
+          append_args = [
+            "--append_newline_at_eof=false"
+          ];
         };
       };
     };
