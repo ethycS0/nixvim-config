@@ -19,6 +19,10 @@
         };
         verible = {
           enable = true;
+          cmd = [
+            "verible-verilog-ls"
+            "--rules_config_search"
+          ];
         };
         nil_ls = {
           enable = true;
